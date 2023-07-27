@@ -25,7 +25,7 @@ new Elysia().use((app) => groupRouter(app, 'groups')).listen(3000);
 // file: groups/hello/index.ts
 // url: http://localhost:3000/hello
 
-import Elysia from 'elysia';
+import type { Elysia } from 'elysia';
 
 export default function helloGroup(app: Elysia, prefix: string) {
   return app.group(prefix, (app) => app.get('', () => 'hello'));
