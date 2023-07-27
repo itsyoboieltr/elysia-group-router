@@ -19,7 +19,7 @@ import groupRouter from 'elysia-group-router';
 new Elysia().use((app) => groupRouter(app, 'groups')).listen(3000);
 ```
 
-### 2. Create your first route in the `groups` directory
+### 2. Create your first group in the `groups` directory
 
 ```ts
 // file: groups/hello/index.ts
